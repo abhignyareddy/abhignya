@@ -1,0 +1,628 @@
+.App {
+  text-align: center;
+}
+
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  background-image: url('./puzzle1.jpg');
+  background-size: cover;
+}
+.header{
+  background-color: #0b0214;
+  display:inline-flexbox;
+  grid-template-columns: 50% 50%;
+  box-shadow: 0px 5px 15px 1px #4d4b4cd9;
+}
+
+.header h3,h6{
+  color: #ffffff;
+
+}
+.header a{
+  text-decoration: none;
+}
+.footer{
+  background-color: #0b0214;
+  display:inline-flexbox;
+
+}
+Link:link {
+  text-decoration: none;
+}
+
+Link:visited {
+  text-decoration: none;
+}
+
+Link:hover {
+  text-decoration: none;
+}
+
+Link:active {
+  text-decoration: none;
+}
+.head-one{
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 80%;
+}
+.head-two{
+  display: flex;
+  justify-content: space-evenly;
+}
+.form-container{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 50%;
+  width: 500px;
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 50px;
+  margin: 30px;
+  font-weight: bold;
+  border-radius: 15px;
+
+}
+.form-login, .form-admin{
+  margin-top: 10%;
+  display: flex;
+  padding-left: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+  
+
+}
+.login-username,
+.login-password,
+.admin-username,
+.admin-password{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.form-login label,
+.form-admin label{
+  display: block;
+  font-size: medium;
+  color: #17032d;
+  margin-top: 10px;
+  padding: 10px;
+  float: left;
+  width: 100px; /* Adjust this value as needed */
+  text-align: left;
+}
+.form-signin{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  width: 100%;
+}
+.signin-username, 
+.signin-password,
+.signin-confirmpassword,
+.signin-firstname,
+.signin-lastname,
+.signin-profession,
+.signin-email
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.form-signin label{
+  display: block;
+  font-size: medium;
+  color: ##17032d;
+  margin-top: 5px;
+  float: left;
+  width: 90px; /* Adjust this value as needed */
+  text-align: left;
+  padding: 5px;
+}
+.username, 
+.password,
+.email,
+.firstname,
+.lastname,
+.confirmpassword,
+.profession
+{
+  padding: 15px 30px;
+  border-radius: 20px;
+  width: 16rem;
+}
+.submit,
+.btn-next{
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-top: 2rem;
+  width: 20rem;
+  color: #fff;
+  background-color: #17032d;
+}
+.username,
+.password,
+.email,
+.confirmpassword,
+.profession,
+.firstname,
+.lastname:hover{
+  border-color: #121212;
+  box-shadow: 0px 0px 4px 1px  #4c4b4d;
+  background-color: #ffffff9f;
+}
+.logout-btn{
+  border-radius: 20px;
+  border: none;
+  width: 6rem;
+  height: 3rem;
+  margin-top: 1.6rem;
+  margin-right: 10px;
+}
+.submit:hover{
+  background-color: #141414b0;
+  color: #ffffff;
+  border-color: #626163;
+}
+.logout-btn:hover{
+  background-color: #4e4e4e;
+  border-color: #ffffff;
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+}
+/* ###user dashboard */
+.dashboard-container {
+  display: grid;
+  width:80%;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 0px;
+  margin-left: 10%;
+  
+  
+}
+
+.user-details {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.other-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rules {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.take-test {
+  display: flex;
+  justify-content: center;
+}
+
+
+.dashboard{
+  margin: 5% 20%;
+  text-align: center;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  margin: 30px;
+  font-weight: bold;
+}
+.dash-s{
+  text-align: start;
+}
+.dash-p{
+  font-size: large;
+  text-align: justify;
+  line-height: 2rem;
+  word-spacing: 0.2rem;
+}
+.wel-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer{
+  /* background-color: #04caaf; */
+  max-height: 8rem;
+}
+
+
+/* //admin dashboard css starts here */
+.admin-dashboard {
+  max-width: 200rem;
+  display: flex;
+  flex-direction:row;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.admin-dashboard p{
+  font-size: small;
+}
+
+.left-div {
+  max-width: 25%;
+  flex: 1;
+  margin-right: 20px;
+  
+}
+
+.right-div {
+  max-width: 75%;
+  flex: 4;
+  display: flex;
+  flex-wrap: wrap;;
+}
+
+.card {
+  width: 40rem;
+  height: 5rem;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.admin-card{
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+  border-radius: 1rem;
+
+}
+.card:hover{
+  box-shadow: 0px 1px 10px 1px #5b5b5cb0;
+}
+.admin-card:hover{
+  box-shadow: 0px 1px 10px 1px #716f739f;
+}
+.card a{
+  text-decoration: none;
+  color: rgb(46, 2, 58);
+}
+/* all the users called by admin */
+.alluser-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.alluser-card {
+  flex: 0 0 auto;
+  margin: 2rem 12rem;
+  width: 80%;
+  height: 10%;
+  box-shadow: 0 2px 4px #9e84b5b0;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.alluser-card p {
+  font-size: medium;
+}
+
+/* css for the test taken users called by admin */
+.table-container{
+  width: 80%;
+  margin: 2% 15%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 15px;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  font-size: medium;
+}
+
+th {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+}
+
+tr:nth-child(even) {
+
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+}
+
+td.user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.res-card{
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+/* rules and instuction styles */
+
+.instructions,
+.instruction{
+  width: 90%;
+  padding: 20px;
+  text-align: left;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.instruction{
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.instructions li,
+.instruction li{
+  font-size: medium;
+  line-height: 1.5em;
+  word-spacing: 0.2em;
+}
+.instructions p,
+.instruction p{
+  font-size: large;
+  line-height: 1.3em;
+  word-spacing: 0.1em;
+}
+.instructions h2,
+.instruction h2{
+  font-size: large;
+}
+.user-card{
+  padding: 20px;
+  text-align: left;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.user-card h2{
+  font-size: large;
+}
+.user-card p{
+  font-size: medium;
+}
+
+
+/* take test page css */
+.taketest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 5% 20%;
+}
+
+.already {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.already p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.already .submit {
+  background-color: #0e0e0ed9;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.already .submit:hover {
+  background-color: #020102b0;
+  border: 2px solid #f4f4f4b0;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 40px;
+  height: 20rem;
+  width: 90%;
+}
+.question-container{
+  position: relative;
+  height: 30rem;
+  width: 60rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.time{
+  background-color: #000000b0;
+  color:white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.questions p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.questions div {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.questions label {
+  font-size: 14px;
+  /* margin-left: 10px; */
+}
+
+.questions input[type='text'] {
+  width: 100%;
+  padding: 5px;
+  font-size: medium;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.questions .btn-next {
+  background-color: #000000b0;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+}
+
+.questions .btn-next:hover {
+  border: 2px solid #9e84b5b0;
+  cursor: pointer;
+  background-color: rgba(42, 41, 41, 0.529);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.testsbumit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+/* user result css */
+.user-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-result form {
+  margin-bottom: 20px;
+}
+
+.ressult-submit {
+  margin-top: 5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color:#060606b0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.res-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+  width: 400px;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.res-card p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+
+.res-card p{
+  font-size: large;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: left;
+}
+
+div > p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+.question-para{
+  font-size: small;
+}
+
+.goback{
+  padding: 8px 16px;
+  background-color: #040404b0;
+  border-radius: 8px;
+  font-size: medium;
+  color: white;
+  margin-top: 2rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
